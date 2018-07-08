@@ -52,6 +52,8 @@ for i in range(iters_num):
         print("train acc, test acc | " + str(train_acc) + ", " + str(test_acc))
 
 # グラフの描画
+#plt.plot(train_loss_list)
+#plt.show
 markers = {'train': 'o', 'test': 's'}
 x = np.arange(len(train_acc_list))
 plt.plot(x, train_acc_list, label='train acc')
